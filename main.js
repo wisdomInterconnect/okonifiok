@@ -13,10 +13,10 @@
  //  firebase.initializeApp(firebaseConfig);
  //  firebase.analytics();
  //listen for submit
- document.getElementById('contact-form').addEventListener('submit', sendMessage)
-     //send message
- function sendMessage(e) {
-     e.preventDefault();
+ document.getElementById('contact-form').addEventListener('submit', sendMessage);
+ //send message
+ function sendMessage($event) {
+     $event.preventDefault();
      //get input value
      let name1 = document.getElementById('name').value;
      let email = document.getElementById('email').value;
@@ -24,10 +24,15 @@
      let textArea = document.getElementById('textarea').value;
      let saveContact = { name1, email, project, textArea };
      console.log(saveContact);
+     console.log(name1);
      sendEmail(name1, email, project, textArea);
-     console.log(sendEmail);
-     reset();
+     document.getElementById('name').value = "";
+     document.getElementById('email').value = "";
+     document.getElementById('project').value = "";
+     document.getElementById('textarea').value = "";
+     console.log(name1, 'huygtrfhuygtruhytr');
 
+     console.log(sendEmail);
  }
  //submit button
  let name1 = document.getElementById('name').value
