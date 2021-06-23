@@ -8,7 +8,7 @@
             --font-semi-bold: 600;
             --font-bold: 700;
             /*---color--*/
-            --first-color: hsl(219, 99%, 44%);
+            --first-color: #136acd;
             --first-color-dark: #000000;
             --first-color-darken: #290F09;
             --text-color: #11100f;
@@ -132,7 +132,7 @@
             left: 0;
             z-index: var(--z-fixed);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
-            background-color: hsl(219, 99%, 44%);
+            background-color: #136acd;
         }
         
         .nav {
@@ -171,13 +171,17 @@
         .nav_link {
             font-size: 1rem;
             text-transform: uppercase;
-            color: var(--first-color-lighten);
+            color: var(--first-color-lighten)!important;
             font-weight: var(--font-bold);
             transition: .3s;
         }
         
         .nav_link:hover {
-            color: #706969;
+            color: #000000!important;
+        }
+        
+        .nav_link:active {
+            color: #000000!important;
         }
         
         .nav_toggle {
