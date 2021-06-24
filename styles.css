@@ -90,6 +90,20 @@
             text-decoration: none;
         }
         
+        .bg-image {
+            /* The image used */
+            background-image: url("img/materliaze.jpeg");
+            /* Add the blur effect */
+            filter: blur(1px);
+            -webkit-filter: blur(1px);
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
         img {
             max-width: 100%;
             height: auto;
@@ -177,12 +191,16 @@
             transition: .3s;
         }
         
-        .nav_link:hover {
-            color: #000000!important;
+        .nav_link:visited {
+            color: var(--first-color-lighten)!important;
         }
         
         .nav_link:active {
-            color: #000000!important;
+            color: var(--button-color)!important;
+        }
+        
+        .nav_link:hover {
+            color: var(--button-color)!important;
         }
         
         .nav_toggle {
@@ -529,6 +547,10 @@
             row-gap: 2rem;
         }
         
+        .or {
+            margin-right: 60px;
+        }
+        
         .project_data {
             text-align: center;
         }
@@ -573,8 +595,7 @@
         .works_data {
             margin: 10px;
         }
-        
-        .works_link {
+        /* .works_link {
             display: inline-flex;
             font-size: 1.5rem;
             background-color: var(--first-color-lighten);
@@ -583,6 +604,7 @@
             margin-bottom: var(--mb-2);
             border-radius: .25rem;
         }
+         */
         
         .works_img:hover .works_data {
             bottom: 0;
@@ -684,6 +706,9 @@
             .home_button {
                 width: initial;
             }
+            .or {
+                text-align: center!important;
+            }
             .nav_menu {
                 width: var(--nav-width);
             }
@@ -741,8 +766,17 @@
                 background-color: none;
             }
             .footer_container {
-                padding: 3rem 0;
-                border-radius: .5rem;
+                padding: 0rem 0;
+                border-radius: 2.5rem;
+            }
+            .nav_link:visited {
+                color: var(--first-color-lighten)!important;
+            }
+            .nav_link:active {
+                color: var(--button-color)!important;
+            }
+            .nav_link:hover {
+                color: var(--button-color)!important;
             }
         }
         
