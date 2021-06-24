@@ -8,12 +8,14 @@
             --font-semi-bold: 600;
             --font-bold: 700;
             /*---color--*/
-            --first-color: #136acd;
+            --first-color: #14213d;
             --first-color-dark: #000000;
             --first-color-darken: #290F09;
-            --text-color: #11100f;
+            --text-color: #000000;
+            --button-color: #fca311;
             --first-color-light: #d1cac8;
-            --first-color-lighten: #FFFAFA;
+            --first-color-lighten: #ffffff;
+            --footer-color: #e5e5e5;
             /*---font and typography--*/
             --body-font: 'Poppins', sans-serif;
             --h1-font-size: 2rem;
@@ -131,7 +133,7 @@
             left: 0;
             z-index: var(--z-fixed);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
-            background-color: #136acd;
+            background-color: var(--first-color)
         }
         
         .nav {
@@ -184,7 +186,7 @@
         }
         
         .nav_toggle {
-            color: var(--first-color-dark);
+            color: var(--first-color);
             font-size: 1.3rem;
             cursor: pointer;
         }
@@ -228,7 +230,7 @@
         
         .home_title {
             font-size: var(--h1-font-size);
-            color: var(--first-color);
+            color: var(--first-color-dark);
             font-weight: var(--font-semi-bold);
         }
         
@@ -260,7 +262,7 @@
         
         .button {
             display: inline-block;
-            background-color: var(--first-color);
+            background-color: var(--button-color);
             color: var(--first-color-lighten);
             padding: 1rem, 3rem;
             font-weight: var(--font-semi-blod);
@@ -279,8 +281,8 @@
         }
         
         .button_light {
-            background-color: var(--first-color-lighten);
-            color: var(--first-color);
+            background-color: var(--button-color);
+            color: var(--first-color-dark);
         }
         
         .button_light:hover {
@@ -634,8 +636,8 @@
         /* footer*/
         
         .footer {
-            background-color: hsl(219, 99%, 44%);
-            color: white;
+            background-color: var(--footer-color);
+            color: var(--first-color);
             text-align: center;
         }
         
@@ -670,7 +672,7 @@
         
         .footer_copy {
             font-size: var(--smaller-font-size);
-            color: white;
+            color: var(--first-color);
         }
         /* media quries*/
         
