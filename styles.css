@@ -12,7 +12,7 @@
             --first-color-dark: #000000;
             --first-color-darken: #290F09;
             --text-color: #000000;
-            --button-color: #fca311;
+            --button-color: #ffc300;
             --first-color-light: #d1cac8;
             --first-color-lighten: #ffffff;
             --footer-color: #e5e5e5;
@@ -247,7 +247,7 @@
         
         .home_social-link {
             display: inline-flex;
-            background-color: var(--first-color);
+            background-color: var(--button-color);
             color: var(--first-color-lighten);
             font-size: 1.1rem;
             border-radius: 50%;
@@ -262,7 +262,7 @@
         
         .button {
             display: inline-block;
-            background-color: var(--button-color);
+            background-color: var(--first-color);
             color: var(--first-color-lighten);
             padding: 1rem, 3rem;
             font-weight: var(--font-semi-blod);
@@ -282,6 +282,7 @@
         
         .button_light {
             background-color: var(--button-color);
+            text-align: center;
             color: var(--first-color-dark);
         }
         
@@ -418,7 +419,10 @@
             margin-bottom: .25rem;
         }
         
-        .education_university,
+        .education_university {
+            color: var(--first-color);
+        }
+        
         .education_speciality {
             display: block;
             font-size: var(--smaller-font-size);
@@ -442,7 +446,7 @@
             display: inline-block;
             width: 12px;
             height: 12px;
-            background-color: var(--first-color);
+            background-color: var(--button-color);
             border-radius: 50%;
         }
         
@@ -479,7 +483,7 @@
         .services_icon {
             font-size: 2rem;
             padding: .5rem;
-            background-color: var(--first-color);
+            background-color: var(--button-color);
             color: var(--first-color-lighten);
             border-radius: 50%;
             margin-bottom: var(--mb-2);
@@ -487,7 +491,7 @@
         
         .services_title {
             font-size: 1.25rem;
-            color: var(--first-color-dark);
+            color: var(--first-color);
             margin-bottom: var(--mb-1);
         }
         
