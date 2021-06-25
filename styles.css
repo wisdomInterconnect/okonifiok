@@ -103,11 +103,6 @@
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-            /* img {
-                max-width: 100%;
-                height: auto;
-                display: block;
-            } */
             
             .section {
                 padding: 4rem 0 2rem;
@@ -237,7 +232,6 @@
                 background-color: var(--first-color);
                 border-radius: 50%;
                 overflow: hidden;
-                /* margin-top: 90px; */
                 margin-bottom: var(--mb-2);
             }
             
@@ -573,11 +567,13 @@
                 height: 50px;
                 padding: 12px;
             }
-            /* Works*/
             
-            .work_container {
-                justify-items: center;
-                row-gap: 2rem;
+            .work_page {
+                text-align: center;
+                text-orientation: animationstart;
+                font-size: larger;
+                font-weight: bold;
+                margin-bottom: 10px;
             }
             
             .works_img {
@@ -688,7 +684,6 @@
             
             .footer-link {
                 display: inline-flex;
-                /* background-color: rgb(119, 117, 117); */
                 color: var(--first-color-lighten);
                 font-size: 1.1rem;
                 border-radius: 50%;
@@ -698,7 +693,6 @@
             }
             
             .footer_link:hover {
-                /* background-color: rgb(119, 117, 117); */
                 color: var(--first-color);
             }
             
@@ -716,9 +710,6 @@
                 height: 100%;
             }
             
-            .img-style img {}
-            /* media quries*/
-            
             @media screen and (min-width: 768px) {
                 .home_button {
                     width: initial;
@@ -732,7 +723,7 @@
                 .about_container,
                 .skills_container,
                 .services_container,
-                .work_container,
+                /* .work_container, */
                 .contact_container,
                 .contact_input {
                     grid-template-columns: repeat(2, 1fr);
@@ -823,8 +814,7 @@
                     margin-left: auto;
                     margin-right: auto;
                 }
-                .services_container,
-                .work_container {
+                .services_container {
                     grid-template-columns: repeat(3, 1fr);
                 }
             }
